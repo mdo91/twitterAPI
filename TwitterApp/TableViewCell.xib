@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="newCellId" selectionStyle="default" indentationWidth="10" rowHeight="167" id="KGk-i7-Jjw" customClass="TableViewCell" customModule="TwitterApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="366" height="167"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="366" height="166.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eLE-wF-WPj">
+                        <rect key="frame" x="0.0" y="5" width="57" height="162"/>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kum-tb-Dvl">
+                        <rect key="frame" x="58" y="5" width="308" height="49"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="nsr-k9-kmL">
+                                <rect key="frame" x="0.0" y="8" width="300" height="19.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Twitter Marketting" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LHv-vK-kf0">
+                                        <rect key="frame" x="0.0" y="0.0" width="145" height="19.5"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="@TwitterM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QUY-dY-fZs">
+                                        <rect key="frame" x="155" y="0.0" width="145" height="19.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <viewLayoutGuide key="safeArea" id="t63-sy-m2N"/>
+                            </stackView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="nsr-k9-kmL" firstAttribute="leading" secondItem="Kum-tb-Dvl" secondAttribute="leading" id="jLF-Yy-rba"/>
+                            <constraint firstItem="nsr-k9-kmL" firstAttribute="top" secondItem="Kum-tb-Dvl" secondAttribute="topMargin" id="ras-pf-csF"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UnR-er-CNj">
+                        <rect key="frame" x="58" y="54" width="308" height="113"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1J1-on-Eme">
+                                <rect key="frame" x="0.0" y="8" width="276" height="75"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Yes, I added constraint, but I still would like to see the constraint layout on storyboard instead of messed up layout">
+                                        <attributes>
+                                            <font key="NSFont" size="16" name=".AppleSystemUIFont"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="1J1-on-Eme" secondAttribute="bottom" constant="30" id="6qt-Fd-p18"/>
+                            <constraint firstItem="1J1-on-Eme" firstAttribute="trailing" secondItem="UnR-er-CNj" secondAttribute="trailingMargin" constant="-24" id="H1J-Nw-Wwo"/>
+                            <constraint firstItem="1J1-on-Eme" firstAttribute="top" secondItem="UnR-er-CNj" secondAttribute="top" constant="8" id="PqV-U1-QPd"/>
+                            <constraint firstItem="1J1-on-Eme" firstAttribute="leading" secondItem="UnR-er-CNj" secondAttribute="leading" id="Zdn-ve-yYz"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Kum-tb-Dvl" firstAttribute="leading" secondItem="eLE-wF-WPj" secondAttribute="trailing" constant="1" id="1jr-vI-BxZ"/>
+                    <constraint firstItem="UnR-er-CNj" firstAttribute="top" secondItem="Kum-tb-Dvl" secondAttribute="bottom" id="1ve-DR-lhR"/>
+                    <constraint firstItem="UnR-er-CNj" firstAttribute="top" secondItem="Kum-tb-Dvl" secondAttribute="bottom" id="3A8-z2-KKt"/>
+                    <constraint firstAttribute="trailing" secondItem="Kum-tb-Dvl" secondAttribute="trailing" id="5Cv-PU-jU0"/>
+                    <constraint firstAttribute="trailing" secondItem="UnR-er-CNj" secondAttribute="trailing" id="CFl-O3-bYT"/>
+                    <constraint firstItem="Kum-tb-Dvl" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="FX3-NU-GDp"/>
+                    <constraint firstAttribute="bottom" secondItem="UnR-er-CNj" secondAttribute="bottom" constant="-0.5" id="M9z-fH-Yvs"/>
+                    <constraint firstItem="Kum-tb-Dvl" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="58" id="RVd-AK-Hpn"/>
+                    <constraint firstItem="eLE-wF-WPj" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="VhN-OJ-Miu"/>
+                    <constraint firstItem="eLE-wF-WPj" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Zcu-rt-hmn"/>
+                    <constraint firstItem="eLE-wF-WPj" firstAttribute="bottom" secondItem="UnR-er-CNj" secondAttribute="bottom" id="Znn-Ya-uPn"/>
+                    <constraint firstAttribute="trailing" secondItem="Kum-tb-Dvl" secondAttribute="trailing" id="d2x-h1-A54"/>
+                    <constraint firstItem="Kum-tb-Dvl" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="djm-ke-7eS"/>
+                    <constraint firstItem="Kum-tb-Dvl" firstAttribute="leading" secondItem="eLE-wF-WPj" secondAttribute="trailing" constant="1" id="hlz-kn-Dyz"/>
+                    <constraint firstItem="Kum-tb-Dvl" firstAttribute="leading" secondItem="UnR-er-CNj" secondAttribute="leading" id="kBI-5w-031"/>
+                    <constraint firstItem="Kum-tb-Dvl" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="ovF-pt-sfx"/>
+                    <constraint firstItem="Kum-tb-Dvl" firstAttribute="leading" secondItem="eLE-wF-WPj" secondAttribute="trailing" constant="1" id="q0D-sZ-d8R"/>
+                    <constraint firstItem="Kum-tb-Dvl" firstAttribute="leading" secondItem="eLE-wF-WPj" secondAttribute="trailing" constant="1" id="sc2-8k-UYe"/>
+                    <constraint firstItem="UnR-er-CNj" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="43" id="ymd-1e-jYv"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="longText" destination="1J1-on-Eme" id="nGj-gl-qLL"/>
+                <outlet property="name" destination="LHv-vK-kf0" id="nRz-Gf-Tei"/>
+                <outlet property="usrname" destination="QUY-dY-fZs" id="u3O-02-cRX"/>
+            </connections>
+            <point key="canvasLocation" x="-7" y="136.5"/>
+        </tableViewCell>
+    </objects>
+</document>
