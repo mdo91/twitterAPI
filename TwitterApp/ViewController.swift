@@ -12,6 +12,8 @@ import SwiftyJSON
 import OhhAuth
 
 class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSource, SearchForSpecificData {
+   
+    
     
     
     
@@ -136,7 +138,10 @@ class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSourc
     func isFiltering()->Bool{
         return !SearchBrIsEmpty() && searchController.isActive
     }
-
+    // MARK: search in facebook
+    func searchInFaceBook(_ orderby: String) {
+        
+    }
 
 
 
@@ -152,5 +157,6 @@ extension ViewController:  UISearchResultsUpdating{
 }
 protocol SearchForSpecificData {
     func SearchInSocialMedia(_ searchText:String)
+    func searchInFaceBook(_ orderby: String)
 }
 
